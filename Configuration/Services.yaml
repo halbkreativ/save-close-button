@@ -1,0 +1,14 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  halbkreativ\SaveCloseButton\:
+    resource: '../Classes/*'
+
+  halbkreativ\SaveCloseButton\EventListener\AddSaveCloseButton:
+    tags:
+      - name: event.listener
+        identifier: 'addSaveCloseButton'
+        event: TYPO3\CMS\Backend\Template\Components\ModifyButtonBarEvent

@@ -1,0 +1,21 @@
+{
+  "name": "halbkreativ/save-close-button",
+  "description": "Adds a Save+Close Button to the TYPO3 Backend.",
+  "type": "typo3-cms-extension",
+  "license": [
+    "GPL-2.0-or-later"
+  ],
+  "require": {
+    "typo3/cms-core": "^11.5 || ^12.4 || ^13.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "halbkreativ\\SaveCloseButton\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "save_close_button"
+    }
+  }
+}
